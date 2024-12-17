@@ -5,15 +5,17 @@ body{
 
 
 #landing-page{
-    margin-top: 8rem;
+    margin-top: 5rem;
     margin-left: 4rem;
     margin-right:4rem;
+    
 }
 #welcome{
     font-family: "Montserrat";
     margin-left:-8rem;
     text-align: center;
     font-size: 3.5rem;
+
 }
 
 #portfolio{
@@ -21,7 +23,7 @@ body{
     font-weight: 400;
     font-size: 8rem;
     margin-top: -7rem;
-    margin-right: -10rem;
+    margin-left: 17.5rem;
     text-align: center;
 }
 
