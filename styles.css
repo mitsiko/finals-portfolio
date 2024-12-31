@@ -30,7 +30,7 @@ a:hover {
     background-color: #f0edde; /* Adjust according to your design */
     flex-wrap: nowrap;
     z-index: +100;
-    border-bottom: 1.2px solid #322f2f;
+    border-bottom: 1.5px solid #322f2f;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 /* Logo styling */
@@ -84,6 +84,16 @@ a:hover {
     padding: 2rem 6rem;
 }
 
+.landing-page img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -100;
+    top: 0px;
+    left: 0px;
+}
+
 .landing-page-columns{
     display: flex;
 }
@@ -123,15 +133,15 @@ a:hover {
     margin-top:-3rem;
 }
 .welcome{
-    padding-top: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     margin: 0px;
     font-family: Helvetica;
     font-weight: bold;
     color: #322f2f;
     text-align: justify;
     font-size: 5.7rem;
-    line-height: 5rem; 
-    background-color: #f0edde;
+    line-height: 4.5rem; 
 }
 
 .iframe-wrapper{
@@ -141,6 +151,114 @@ a:hover {
     height: 37rem;
     width: 100%;
 }
+.about-section-grid-container{
+    display:grid;
+    height: 50rem;
+    padding: 4rem 6rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: 
+    "about about about about spiral spiral me me me"
+    "about about about about spiral spiral me me me"
+    "uphsd uphsd uphsd desc desc desc me me me"
+    "uphsd uphsd uphsd desc desc desc skills skills skills"
+    "uphsd uphsd uphsd desc desc desc skills skills skills"
+    "uphsd uphsd uphsd desc desc desc skills skills skills"
+    "uphsd uphsd uphsd desc desc desc skills skills skills";
+}
+
+#about-me{
+    grid-area: about;
+    border-left: 1.5px solid #322f2f;
+    border-top: 1.5px solid #322f2f;
+    border-right: none;
+    border-bottom: none;
+    padding: 2rem;
+    background-color: #f0edde;
+
+}
+#about-me h2{
+    margin: 0px;
+    font-size: 3rem;
+}
+#spiral{
+    grid-area: spiral;
+    border-left: 1.5px solid #322f2f;
+    border-top: 1.5px solid #322f2f;
+    border-right: none;
+    border-bottom: none;
+    background-color: #f0edde;
+
+}
+#spiral img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#uphsd{
+    grid-area: uphsd;
+    border-left: 1.5px solid #322f2f;
+    border-top: 1.5px solid #322f2f;
+    border-right: none;
+    border-bottom: 1.5px solid #322f2f;
+}
+
+#uphsd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+#desc{
+    grid-area: desc;
+    border-left: 1.5px solid #322f2f;
+    border-top: 1.5px solid #322f2f;
+    border-right: none;
+    border-bottom: 1.5px solid #322f2f;
+    padding: 2rem;
+    background-color: #f0edde;
+
+}
+
+#desc h3{
+    margin-top: 0px;
+    margin-bottom: 2rem;
+
+}
+#desc p{
+    margin-top: 0px;
+}
+ 
+#me{
+    grid-area: me;
+    border-left: 1.5px solid #322f2f;
+    border-top: 1.5px solid #322f2f;
+    border-right: 1.5px solid #322f2f;
+    border-bottom: 1.5px solid #322f2f;
+}
+
+#me img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#skills{
+    grid-area: skills;
+    border-left: 1.5px solid #322f2f;
+    border-top: none;
+    border-right: 1.5px solid #322f2f;
+    border-bottom: 1.5px solid #322f2f;
+    padding: 2rem;
+    background-color: #f0edde;
+
+}
+
+#skills h3{
+    margin-top: 0px;
+    margin-bottom: 2rem;
+}
+
 
 .first-row{
     align-self: flex-end; /* Align first row */
